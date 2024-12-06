@@ -1,0 +1,10 @@
+
+        function detectChromeOS() {
+            const isChromeOS = navigator.userAgent.includes('CrOS');
+            if (isChromeOS) {
+                document.getElementById('container').style.display = 'block';
+                document.getElementById('iframe').src = "https://example.com"; // Change this URL to your desired source
+            } else {
+                alert('This application is only for ChromeOS devices.');
+            }
+        }
