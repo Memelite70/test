@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="128x128" href="favicon.ico">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+const iframe = document.getElementById('iframe'); iframe.onload = loadTitle(); function loadTitle(){const iframeTitle = iframe.contentDocument.title; document.title = iframeTitle; };
+setInterval(loadTitle(), 1000);
+</script>
+    <link rel="apple-touch-icon" sizes="128x128" href="src/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="src/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
